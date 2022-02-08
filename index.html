@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <title>Quizz App</title>
+</head>
+<body>
+    <!-- topSection -->
+    <div class="intro py-3 bg-white text-center">
+        <div class="container">
+            <h2 class="text-primary display-3 my-4">
+               quizzApp
+            </h2>
+            <input class="form-control form-control-lg" type="text" placeholder="Enter Your Name..." name="name">
+            <div class="failed d-none text-danger">Please Enter Your Name</div>
+        </div>
+    </div>
+
+    <!-- resultSection -->
+    <div class="result py-4 d-none bg-light text-center">
+        <div class="container lead">
+            <p>Hey <span class="username text-primary display-4 p-3"></span> we are <span class="score text-primary display-4 p-3">0%</span>Matched</p>
+            <div class="message d-none"></div>
+        </div>
+    </div>
+
+    <!-- quizzSection -->
+    <div class="quizz py-4 bg-primary">
+        <div class="container">
+            <h2 class="my-5 text-white">On with the quistion...</h2>
+            <form class="quizz-form text-light">
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        1. which is your favourite music band?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="A" checked>
+                        <label class="form-check-label">The Beatles</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="B">
+                        <label class="form-check-label">Pink Floyed</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="C">
+                        <label class="form-check-label">Radiohead</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        2. which is your favourite tv show?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="A" checked>
+                        <label class="form-check-label">Game Of Thrones</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="B">
+                        <label class="form-check-label">Breaking Bad</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="C">
+                        <label class="form-check-label">Sopranos</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        3. which is your favourite movie?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="A" checked>
+                        <label class="form-check-label">Taxi Driver</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="B">
+                        <label class="form-check-label">Fight Club</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="C">
+                        <label class="form-check-label">The Godfather</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        4. which is your favourite animated series?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="A" checked>
+                        <label class="form-check-label">Bojack Horseman</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="B">
+                        <label class="form-check-label">The Simpsons</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="C">
+                        <label class="form-check-label">Love, Death & Robots</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        5. which is your favourite arabic band?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q5" value="A" checked>
+                        <label class="form-check-label">Cairokey</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q5" value="B">
+                        <label class="form-check-label">el morabba3</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q5" value="C">
+                        <label class="form-check-label">mashrou leila</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        6. which is your favourite cinnematic universe?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q6" value="A" checked>
+                        <label class="form-check-label">DC Extended Universe</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q6" value="B">
+                        <label class="form-check-label">Marvel Cinematic Universe</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q6" value="C">
+                        <label class="form-check-label">Star Wars Universe</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        7. If you're a football fan which club do you support?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q7" value="A" checked>
+                        <label class="form-check-label">Al Ahly</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q7" value="B">
+                        <label class="form-check-label">El Zamalek</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q7" value="C">
+                        <label class="form-check-label">I'm not a football fan</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        8. which is your favourite comic book character?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q8" value="A" checked>
+                        <label class="form-check-label">Batman</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q8" value="B">
+                        <label class="form-check-label">Spiderman</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q8" value="C">
+                        <label class="form-check-label">Wonder Woman</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        9. what is the first rule of fight club?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q9" value="A" checked>
+                        <label class="form-check-label">if someone yells “stop!”, goes limp, or taps out, the fight is over</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q9" value="B">
+                        <label class="form-check-label">YOU DO NOT TALK ABOUT FIGHT CLUB</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q9" value="C">
+                        <label class="form-check-label">only two guys to a fight</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        10. who was the best batman?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q10" value="A" checked>
+                        <label class="form-check-label">Christian Bale</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q10" value="B">
+                        <label class="form-check-label">George Clooney</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q10" value="C">
+                        <label class="form-check-label">Ben Affleck</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        11. what programming language do you prefer to use?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q11" value="A" checked>
+                        <label class="form-check-label">Python</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q11" value="B">
+                        <label class="form-check-label">Java</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q11" value="C">
+                        <label class="form-check-label">JavaScript</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        12. what social media do you use the most?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q12" value="A" checked>
+                        <label class="form-check-label">facebook</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q12" value="B">
+                        <label class="form-check-label">twitter</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q12" value="C">
+                        <label class="form-check-label">something else</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        13. what is your favourite music player?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q13" value="A" checked>
+                        <label class="form-check-label">Spotify</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q13" value="B">
+                        <label class="form-check-label">Anghami</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q13" value="C">
+                        <label class="form-check-label">something else</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        14. which is your favourite arabic song?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q14" value="A" checked>
+                        <label class="form-check-label">bo3dak 3la bali</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q14" value="B">
+                        <label class="form-check-label">lma kan el ba7r azraq</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q14" value="C">
+                        <label class="form-check-label">ana menak et3alemt</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        15. how is the new year is going so far, lol?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q15" value="A" checked>
+                        <label class="form-check-label">goood</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q15" value="B">
+                        <label class="form-check-label">nah</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q15" value="C">
+                        <label class="form-check-label">everything will be fine</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        16. what kind of music do you like?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q16" value="A" checked>
+                        <label class="form-check-label">Electronic dance music</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q16" value="B">
+                        <label class="form-check-label">rock</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q16" value="C">
+                        <label class="form-check-label">rap music</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        17. how do you give a ninja direction?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q17" value="A" checked>
+                        <label class="form-check-label">Show them a map</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q17" value="B">
+                        <label class="form-check-label">Don't worry, a ninja will find you</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q17" value="C">
+                        <label class="form-check-label">You don't</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        18. what is your favourite song?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q18" value="A" checked>
+                        <label class="form-check-label">wish you were here</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q18" value="B">
+                        <label class="form-check-label">decks dark</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q18" value="C">
+                        <label class="form-check-label">your voice is my favourite song</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        19. what is your favourite movie quote?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q19" value="A" checked>
+                        <label class="form-check-label">"Revenge is a dish best served cold."</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q19" value="B">
+                        <label class="form-check-label">"It's only after we've lost everything that we're free to do anything."</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q19" value="C">
+                        <label class="form-check-label">"I once saw him kill three men in a bar, with a pencil. With a fucking pencil."</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead fw-normal">
+                        20. which is your favourite music line?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q20" value="A" checked>
+                        <label class="form-check-label">"i never opened myself this way.. life is ours, we live it our way.. and nothing else matters"</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q20" value="B">
+                        <label class="form-check-label">"wish we could turn back time.. to the good old days.. when our mama sang us to sleep but now we're stressed out"</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q20" value="C">
+                        <label class="form-check-label">"they say people never change, but that's bullshit.. they do"</label>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <input type="submit" class="btn btn-light">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <script src="js/script.js"></script>
+    <!-- <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+</body>
+</html>
